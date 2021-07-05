@@ -1,0 +1,743 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*=========*/
+/* Normal */
+:root {
+    --main-color: #dca85e;
+    --sec-color: #003774;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main-color {
+    color: #dca85e;
+}
+
+.sec-color {
+    color: #003774;
+}
+
+/*=======================*/
+/* Sectoion landing*/
+.landing {
+    background-image: url(../images/bk-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing nav {
+    padding: 20px 0;
+    margin-bottom: 100px;
+}
+
+.landing nav .logo span {
+    font-size: 30px;
+    color: var(--main-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.landing nav .menu {
+    position: relative;
+    z-index: 999999;
+    cursor: pointer;
+}
+
+.landing nav .menu::after {
+    content: "";
+    display: inline-block;
+    padding: 26px;
+    background-color: #ffffff42;
+    position: absolute;
+    top: -22px;
+    width: 595px;
+    height: 66px;
+    left: -47px;
+}
+
+.landing nav img {
+    width: 70%;
+    cursor: pointer;
+}
+
+.padding {
+    padding: 0 40px;
+}
+
+.landing .sand-box {
+    margin-bottom: 20px;
+}
+
+.landing .sand-box img {
+    width: 65%;
+}
+
+.digital-rs {
+    margin-top: 30px;
+    padding: 40px 100px;
+    background-color: #ffffff44;
+    border-radius: 83px;
+    color: #FFF;
+    -webkit-border-radius: 83px;
+    -moz-border-radius: 83px;
+    -ms-border-radius: 83px;
+    -o-border-radius: 83px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Digital Real Estate */
+.digital-rs h6 {
+    font-size: 25px;
+}
+
+.digital-rs .digital-box {
+    background-color: #ffffffc9;
+    padding: 20px;
+    margin: 10px 0;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 0 2px #cecece;
+}
+
+.digital-rs .digital-box img {
+    width: 131px;
+    height: 130px;
+    border: 1px solid var(--main-color);
+    background-color: #FFF;
+    padding: 7px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.digital-rs .digital-box h2 {
+    color: var(--sec-color);
+    margin: 12px 0;
+}
+
+.digital-rs .digital-box button {
+    background-color: var(--main-color);
+    color: #FFF;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.digital-rs .digital-box button:hover {
+    background-color: #b8843b;
+}
+
+/* Social media*/
+.social-media {
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+}
+
+.social-media ul {
+    list-style: none;
+}
+
+.social-media ul li {
+    margin: 7px 0;
+}
+
+.social-media ul li a {
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+/*=======================*/
+/* Sectoion Form */
+.form {
+    position: relative;
+    padding: 20px 0;
+}
+
+.form .top-img,
+.form .bottom-img {
+    position: absolute;
+}
+
+.form .top-img img,
+.form .bottom-img img {
+    width: 55%;
+}
+
+.form .top-img {
+    top: 0;
+    left: 0;
+}
+
+.form .bottom-img {
+    bottom: 0;
+    right: 0;
+}
+
+.form form {
+    margin: 120px auto;
+    background-color: #F7F7F7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form form .row {
+    margin: 15px 0;
+}
+
+.form form .search {
+    background-color: var(--main-color);
+    border: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.form form .search:hover {
+    background-color: #b8843b;
+}
+
+.form form .advanced-sh a {
+    text-decoration: none;
+    color: #003dc2;
+}
+
+.form form .advanced-sh a::after {
+    content: " >";
+    color: #c58936;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*=======================*/
+/* Sectoion Sale */
+.sale {
+    position: relative;
+    background-color: #f7f7f7;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.sale h1 {
+    color: var(--sec-color);
+}
+
+.sale .sale-box {
+    margin-top: 50px;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.sale .sale-box img {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.sale .sale-box .sale-box-info {
+    padding: 15px;
+    position: relative;
+}
+
+.sale .sale-box h2 {
+    font-size: 18px;
+    color: var(--sec-color);
+    font-weight: bold;
+}
+
+.sale .sale-box .road-adj {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    font-size: 12px;
+    opacity: .5;
+}
+
+.sale .sale-box h6 {
+    font-size: 15px;
+}
+
+.sale .sale-box h6 span {
+    font-size: 22px;
+}
+/*=======================*/
+/* Sectoion price */
+.price{
+    background-color: #011a38;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+.price .price-grid{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 20%;
+}
+.price .price-grid .price-box{
+    padding: 20px;
+    position: relative;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+    z-index: 999;
+}
+.price .price-grid .price-box h6{
+    color: #FFF;
+}
+.price .price-grid .price-box .price-box-cont{
+    margin-bottom: 55px;
+}
+.price .price-grid .price-box .mana{
+    background-color: #ffcb01;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+.price .price-grid .price-box .mana span:first-child{
+    font-size: 23px;
+}
+.price .back-img-price-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+}
+.price .back-img-price-right img{
+    width: 60%;
+    float: right;
+}
+.price .back-img-price-left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 8; 
+}
+.price .back-img-price-left img{
+    width: 45%;
+    float: left;
+}
+/*=======================*/
+/* Sectoion Location */
+.location{
+    display: grid;
+    grid-template-columns: 55% 44.5%;
+    gap: .5%;
+    margin: 20px 0;
+}
+.location .location-box-first{
+    background-image: url(../images/location.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.location .location-box-first {
+    position: relative;
+}
+.location .location-box-first .center{
+    background-color: #011a38;
+    padding: 15px;
+    position: relative;
+    top: 55px;
+    left: 25%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.location .location-box-first .center label{
+    color: #FFF;
+}
+.location .location-box-first .center input{
+    width: 10%;
+}
+.location .location-box-first .center input[type="submit"]{
+    background-color: var(--main-color);
+    color: #FFF;
+    border: 0;
+    margin-left: 20px;
+}
+.location-box-sec{
+    background-color: #011a38;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.location-box-sec h6{
+    color: #FFF;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 23px;
+}
+.location-box-sec img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.location .location-box-sec .info h4{
+    color: #FFF;
+    margin: 20px 0;
+}
+.location .location-box-sec .info i{
+    background-color: #ffffffeb;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: #011a38;
+}
+.location .location-box-sec .info .info-cont h3{
+    color: #FFF;
+    font-size: 20px;
+    margin: 0;
+}
+.inner-info{
+    margin-bottom: 25px;
+}
+.location .location-box-sec .info .info-cont{
+    position: absolute;
+    top: -3px;
+    left: 56px;
+
+}
+.location .location-box-sec p{
+    color: #FFF;
+    margin: 0;
+}
+/*=======================*/
+/* Sectoion Rent */
+.rent {
+    background-image: url(../images/lfr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 40px 0;
+    max-height: 570px;
+}
+
+.rent h1 {
+    color: #FFF;
+}
+
+.rent .row {
+    row-gap: 8px;
+}
+
+.rent-gallery {
+    position: relative;
+    border-bottom: 3px solid var(--main-color);
+    overflow: hidden;
+}
+.rent-gallery img{
+    height: 100%;
+}
+
+.rent-gallery .parcel {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: -70px;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: bottom .3s ease;
+    -webkit-transition: bottom .3s ease;
+    -moz-transition: bottom .3s ease;
+    -ms-transition: bottom .3s ease;
+    -o-transition: bottom .3s ease;
+}
+
+.rent-gallery:hover .parcel {
+    bottom: 0;
+}
+.parcel:hover{
+    bottom: 0;
+}
+
+.rent-gallery .parcel ul {
+    list-style: none;
+    padding: 0;
+    display: inline;
+}
+
+.rent-gallery .parcel ul li {
+    display: inline;
+    color: var(--main-color);
+}
+
+.rent-gallery .parcel ul li i {
+    background-color: #F7F7F7;
+    padding: 5px;
+}
+
+.rent-gallery .parcel h6 {
+    font-size: 15px;
+}
+
+/*=======================*/
+/* Sectoion Articles*/
+.articles {
+    padding-top: 100px;
+    position: relative;
+}
+
+.articles .articles-matrix {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.articles .articles-matrix img {
+    width: 55%;
+    float: right;
+}
+
+.articles h1 {
+    color: var(--sec-color);
+}
+
+.articles .articles-box {
+    margin-top: 40px;
+}
+
+/*=======================*/
+/* Sectoion News*/
+.news {
+    background-color: #f7f7f7;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.news .news-box{
+    position: relative;
+}
+.news .news-box img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    margin-top: -40px;
+}
+.news .news-box-cont{
+    padding-top: 40px;
+    margin-left: 30px;
+}
+/*=======================*/
+/* Sectoion Chat */
+.chat {
+    background-color: #f7f7f7;
+    padding: 70px 0;
+}
+
+.chat p {
+    margin: 20px 0;
+}
+
+.chat .chat-box-content {
+    padding: 40px 0;
+}
+
+/*=======================*/
+/* Sectoion Leasing-prop */
+.leasing-prop {
+    padding: 70px 0;
+    background-image: linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)), url(../images/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-height: 390px;
+}
+
+.leasing-prop .leasing-text {
+    padding: 40px;
+    width: 50%;
+    background-color: var(--sec-color);
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    z-index: 999;
+}
+
+.leasing-prop .leasing-text .border-bg {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    border: 2px solid var(--main-color);
+    border-bottom: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.leasing-prop .leasing-text h1 {
+    color: #FFF;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.leasing-prop .leasing-text p {
+    color: #FFF;
+    margin-bottom: 200px;
+}
+
+.leasing-prop .leasing-text h4 {
+    color: #FFF;
+    position: relative;
+}
+
+.leasing-prop .leasing-text h4::before {
+    content: "";
+    width: 57px;
+    height: 3px;
+    padding: 1px;
+    position: absolute;
+    top: -20px;
+    display: inline-block;
+    transform: rotate(180deg);
+    background-color: var(--main-color);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.leasing-prop .leasing-text h4::after {
+    content: "";
+    width: 200px;
+    height: 3px;
+    padding: 1px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    display: inline-block;
+    transform: rotate(180deg);
+    background-color: var(--main-color);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+/*=======================*/
+/* Sectoion Footer */
+footer {
+    background-color: #011a38;
+    padding-top: 200px;
+    position: relative;
+    z-index: 88;
+}
+
+footer .footer-bg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 80px;
+    z-index: -1;
+    opacity: .5;
+}
+
+footer .footer-bg img {
+    width: 50%;
+    display: inline;
+}
+
+footer .address {
+    position: relative;
+    bottom: -130px;
+}
+
+footer .address ul,
+footer .prop ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .address ul li,
+footer .prop ul li {
+    color: #FFF;
+    margin: 15px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer .prop ul li::before {
+    content: "\25CB";
+    color: var(--main-color);
+    margin-right: 5px;
+}
+
+footer .copyright {
+    width: 100%;
+    background-color: var(--sec-color);
+    color: #FFF;
+    z-index: 9999;
+    padding: 15px;
+    line-height: 2.5;
+    z-index: 999;
+}
